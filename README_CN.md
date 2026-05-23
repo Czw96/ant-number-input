@@ -10,7 +10,7 @@
   <a href="https://github.com/Czw96/antd-number-input"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs Welcome" /></a>
 </p>
 
-[English](https://github.com/Czw96/antd-number-input/blob/master/README.md) | 中文
+[English](https://github.com/Czw96/ant-number-input/blob/master/README.md) | 中文
 
 ---
 
