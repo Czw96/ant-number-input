@@ -1,12 +1,17 @@
 import react from "@vitejs/plugin-react";
 import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
-import { defineConfig } from "vite";
+import { defineConfig, esmExternalRequirePlugin } from "vite";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    esmExternalRequirePlugin({
+      external: ["react", "react-dom", "react/jsx-runtime"],
+    }),
+  ],
   build: {
     emptyOutDir: false,
     lib: {
